@@ -1,0 +1,72 @@
+body{
+  font-family:  "Raleway", serif;
+}
+.parent{
+  position: relative;
+  border: 1px solid black;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.solid-circle{
+  height: 750px;
+  width: 750px;
+  border-radius: 50%;
+  background-color:#476EF7 ;
+  position: absolute;
+  right: -375px;
+  top: -120px;
+  z-index: 1;
+}
+#click-here{
+  background-color: white;
+  color: #476EF7 ;
+  font-size: large;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px black;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 10px;
+    padding: 0px 25px;
+}
+.main-content{
+  margin-left: 25px;
+}
+#name{
+  color:#476EF7 ;
+  font-size: 100px;
+}
+.form-floating{
+  box-shadow:5px 8px 6px rgba(0,0,0,.25);
+  border-radius: 8px;
+}
+#login-button{
+  color: white;
+  background-color: #476EF7;
+  padding: 8px 25px;
+}
+
+@media only screen and (max-width: 768px) {
+   .solid-circle{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    top:-115px ;
+    right:-150px ;
+   }
+   #name{
+    color: black;
+   }
+   #login-button{
+    background-color: black;
+   }
+   #click-here{
+    color: black;
+   }
+}
